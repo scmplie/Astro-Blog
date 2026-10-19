@@ -13,7 +13,7 @@ const posts = (await getCollection('blog')).sort(
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="zh">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
@@ -95,7 +95,7 @@ const posts = (await getCollection('blog')).sort(
 						<li>
 							<a href={`/blog/${post.id}/`}>
 								{post.data.heroImage && (
-									<Image width={720} height={360} src={post.data.heroImage} alt="" />
+									<Image:any width={720} height={360} src={post.data.heroImage} alt="" />
 								)}
 								<h4 class="title">{post.data.title}</h4>
 								<p class="date">
